@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookSky App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <div class="navbar">
+        <h1>hello Bookkeys</h1>
+    </div>
+    <div class="container">
+        <div class="book-container">
+        <h2>Hi Wellcome To Hor World</h2>
+        <h5>Enjoy Your Time</h5>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non sit delectus, quo iusto sequi cumque doloribus assumenda pariatur sint hic atque sapiente, unde eaque aliquam velit exercitationem, ea similique maiores?</p>
+        <button onclick="deletebook(event)">delete</button>
+</div>
+    </div>
+
+    <div class="poppup-overlay"></div>
+    
+    <div class="poppup-box">
+        <h2>had book</h2>
+        <form>
+            <input type="text" placeholder="book-title" id="book-title-input">
+            <input type="text" placeholder="book-author" id="book-author-input">
+            <textarea placeholder="short Description" id="book-discription-input"></textarea>
+            <button id="add-book"> add</button>
+            <button id="cancel-poppup"> cancel</button>
+        </form>
+    </div>
+    <button class="add-button" id="add-poppup-button">+</button>
+    <script src="script.js"></script>
+</body>
+</html>
